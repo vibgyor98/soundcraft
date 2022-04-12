@@ -41,7 +41,7 @@
     <section class="home" id="home">
       <div class="content">
         <h3>Of All Time, the best.</h3>
-        <h5>One Name, One Brand.</h5>
+        <h5>One Name, One Sound.</h5>
         <p>
           Get all new generation gadgets and take your event to next level. All
           products are available for sale and rent.
@@ -248,33 +248,6 @@
 
     <!-- popular section ends -->
 
-    <!-- steps section starts  -->
-
-    <!-- <div class="step-container">
-      <h1 class="heading">how it <span>works</span></h1>
-
-      <section class="steps">
-        <div class="box">
-          <img src="images/step-1.jpg" alt="" />
-          <h3>choose your favorite food</h3>
-        </div>
-        <div class="box">
-          <img src="images/step-2.jpg" alt="" />
-          <h3>free and fast delivery</h3>
-        </div>
-        <div class="box">
-          <img src="images/step-3.jpg" alt="" />
-          <h3>easy payments methods</h3>
-        </div>
-        <div class="box">
-          <img src="images/step-4.jpg" alt="" />
-          <h3>and finally, enjoy your food</h3>
-        </div>
-      </section>
-    </div> -->
-
-    <!-- steps section ends -->
-
     <!-- gallery section starts  -->
 
     <section class="gallery" id="gallery">
@@ -464,18 +437,23 @@
           <img src="images/banner/logo-epic-1.png" alt="" />
         </div>
 
-        <form action="">
+        <form id="contact-form" method="post">
           <div class="inputBox">
-            <input type="text" placeholder="name" />
-            <input type="email" placeholder="email" />
+            <input class="name" type="text" placeholder="name" />
+            <input class="email" type="email" placeholder="email" />
           </div>
 
           <div class="inputBox">
-            <input type="number" placeholder="contact number" />
-            <input type="text" placeholder="gadget name" />
+            <input
+              class="contactnumber"
+              type="number"
+              placeholder="contact number"
+            />
+            <input class="gadget" type="text" placeholder="gadget name" />
           </div>
 
           <textarea
+            class="address"
             placeholder="address"
             name=""
             id=""
@@ -484,7 +462,7 @@
           ></textarea>
 
           <div class="submit">
-            <input type="submit" value="Submit" class="btn" />
+            <input type="submit" value="Send" class="btn" />
           </div>
         </form>
       </div>
@@ -521,5 +499,20 @@
 
     <!-- custom js file link  -->
     <script src="script.js"></script>
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- email.js integration -->
+    <!-- User ID       5myISp3pztpjfuNoP -->
+    <!-- Access Token  eR7WoTrZYbZLBcLLfwUiF -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('5myISp3pztpjfuNoP');
+      })();
+    </script>
+    <script src="email.js"></script>
   </body>
 </html>
