@@ -212,7 +212,7 @@ header .navbar a:hover {
 /***Best Selling*******/
 /**********************/
 .speciality h1 {
-  color: var(--form-color);
+  color: white;
 }
 .speciality .box-container {
   display: flex;
