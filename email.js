@@ -71,3 +71,6 @@ function success() {
 function resetForm() {
   document.getElementById('contact-form').reset();
 }
+
+// //Page reload
+// function pageReload() {}

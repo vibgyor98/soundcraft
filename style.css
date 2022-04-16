@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap');
 
 :root {
-  --red: #411640;
+  /* --red: #411640; */
+  --red: #000000;
   --primary: #dcb933;
   --form-color: #d1b2e0;
 }
@@ -211,7 +212,7 @@ header .navbar a:hover {
 /**********************/
 /***Best Selling*******/
 /**********************/
-.speciality h1 {
+/* .speciality h1 {
   color: white;
 }
 .speciality .box-container {
@@ -228,9 +229,9 @@ header .navbar a:hover {
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
   cursor: pointer;
   border-radius: 0.5rem;
-}
+} */
 
-.speciality .box-container .box .image {
+/* .speciality .box-container .box .image {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -247,10 +248,9 @@ header .navbar a:hover {
 
 .speciality .box-container .box .content img {
   margin: 1.5rem 0;
-  /* background: var(--primary); */
-}
+} */
 
-.speciality .box-container .box .content h3 {
+/* .speciality .box-container .box .content h3 {
   font-size: 2.5rem;
   color: var(--red);
 }
@@ -267,7 +267,7 @@ header .navbar a:hover {
 
 .speciality .box-container .box:hover .content {
   transform: translateY(100%);
-}
+} */
 
 /**********************/
 /***Popular*******/
@@ -374,8 +374,8 @@ header .navbar a:hover {
 }
 
 .gallery .box-container .box img {
-  height: 100%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -432,7 +432,7 @@ header .navbar a:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
   border-radius: 0.5rem;
   flex: 1 1 30rem;
-  background: #333;
+  background: var(--form-color);
   margin-top: 6rem;
 }
 
@@ -447,13 +447,13 @@ header .navbar a:hover {
 
 .review .box-container .box h3 {
   font-size: 2.5rem;
-  color: var(--primary);
+  color: var(--red);
   padding: 0.5rem 0;
 }
 
 .review .box-container .box .stars i {
   font-size: 2rem;
-  color: var(--primary);
+  color: var(--red);
   padding: 0.5rem 0;
 }
 
@@ -542,6 +542,10 @@ header .navbar a:hover {
   gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.footer .share .btn:hover {
+  color: var(--red);
 }
 
 .footer .credit {
@@ -654,6 +658,12 @@ header .navbar a:hover {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .gallery .box-container .box img {
+    max-width: 100%;
+    /* height: auto; */
+    /* object-fit: cover; */
   }
 
   .order .row form .inputBox input {
